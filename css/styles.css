@@ -1,0 +1,176 @@
+
+body {
+    background-color:rgb(183, 177, 177);
+}
+h2 {
+    margin-left: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(135, 111, 156);
+}
+header{
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    padding: 1px ;
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: .2s;
+    position: fixed;
+}
+
+.logo {
+    padding-left: 340px;
+    height: 100px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blueviolet;
+}
+
+.tit-logo {
+    
+    margin-left: 10px;
+}
+nav ul {
+    
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+nav ul li a {
+    color:#fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+home{
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: hidden;
+    position: relative;
+}
+
+
+.home .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+.home .content h1 {
+    font-size: 35px;
+    color: #fff;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0, .3);
+    text-transform: uppercase;
+}
+
+.video-container {
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 350px;
+    
+}
+
+.video-container video {
+    width: 350px;
+    height: 350px;
+}
+
+
+.conteiner {
+    
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.image-left, .image-right {
+          
+    flex: 1;
+    
+}
+
+.text-center {
+    
+    flex: 2;
+    text-align: center;
+}
+.tit-retazo {
+    font-size: 35px;
+    margin-top: -80px;
+}
+
+.parr-text {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.conteiner2 {
+    
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.title {
+    font-size: 25px;
+    padding-left: 35%;
+    
+}
+
+.img-retrato {
+    padding-left: 160px;
+    
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+.conteiner-3 {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    
+    
+}
+
+.text-t {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+footer{
+    scroll-padding-top: 50px;
+    padding: 30px;
+    text-align: center;
+    background-color:#e4dada
+}
+
