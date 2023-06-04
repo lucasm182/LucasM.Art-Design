@@ -1,7 +1,10 @@
-*{box-sizing: border-box;}
+*{box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
 
 body {
-
+    
     background-color:rgb(183, 177, 177);
 }
 h2 {
@@ -50,6 +53,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:#fff;
     text-decoration: none;
     padding: 10px;
@@ -110,6 +114,10 @@ home{
           
     flex: 1;
     
+    
+}
+.image-right {
+    padding-left: 100px;
 }
 
 .text-center {
@@ -118,12 +126,13 @@ home{
     text-align: center;
 }
 .tit-retazo {
-    font-size: 35px;
+    font-size: 30px;
     margin-top: -80px;
 }
 
 .parr-text {
     margin-top: 90px;
+    padding-left: 50px;
     text-align: center;
     font-size: 25px;
 }
@@ -137,7 +146,7 @@ home{
 
 .title {
     font-size: 25px;
-    padding-left: 35%;
+    padding-left: 30%;
     
 }
 
@@ -166,6 +175,7 @@ home{
 .text-t {
     text-align: center;
     font-size: 25px;
+    padding-right: 80px;
 }
 
 
@@ -179,7 +189,7 @@ footer{
 /* Galeria */
 
 
-.astro {
+*.astro {
     
     position: fixed;
     top: 0;
@@ -187,7 +197,7 @@ footer{
     left: 0;
     width: 20%;
     height: 100vh;
-    background-image: url('/img/shalom-reco2.jpg');
+    background-image: url('../img/shalom-reco2.jpg');
     background-size: cover;
     background-position: left top;
     background-size: 100% auto;
@@ -206,17 +216,25 @@ footer{
     z-index: 1;
 }
 
+audio {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
 
 /*carousel*/
 
-.cont-slider {
+.carrouselCont {
     
     background-color: black;
-    width: 90%;
+    width: 80%;
     max-width: 500px;
-    
-    margin-top: 150px ;
+    height: 80%;
+    max-height: 700px;
+    margin-top: 190px ;
     margin-left: 550px;
+    margin-bottom: 300px;
     overflow: hidden;
     box-shadow: 0 0 0 10px #fff,
                 0 15px 50px;
@@ -224,19 +242,7 @@ footer{
 
 }
 
-.slider {
-    
-    display: flex;
-    width: 1000%;
-    height: 400px;
-    margin-left: -100%;
-}
-
-.slider__section {
-    width: 100%;
-}
-
-.slider__img {
+.carrouselCont img {
     
     display: block;
     width: 100%;
@@ -244,7 +250,7 @@ footer{
     object-fit: cover;
 }
 
-.slider__btn {
+.botones {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -259,15 +265,56 @@ footer{
     cursor: pointer;
 }
 
-.slider__btn:hover {
+.botones:hover {
     background: #fff;
 }
 
-.slider__btn--left{
+.atras{
     left: 10px;
 }
 
-.slider__btn--right {
+.adelante {
     right: 10px;
 }
 
+#footer-video {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+/*formulario*/
+#txtForm {
+    
+    text-align: center;
+    padding-right: 100px;
+    color:rgb(67, 52, 83);
+    text-shadow: 2px 2px 4px rgba(0,0,0, .3);
+   
+}
+form{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+    align-items: center;
+}
+
+textarea {
+    border: 1px solid rgb(187, 201, 157);
+    border-radius: 0px 10px 10px 10px;
+}
+
+#error {
+    border: 1px solid rgb(215, 86, 138);
+
+}
+
+.error p{
+    color: rgb(61, 5, 5);
+}
+
+.error {
+    border: 1px solid black;
+}

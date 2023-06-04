@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="./js/form.js"></script>
     <title>Foro</title>
+    
+
 </head>
 <body>
     <header>
@@ -29,13 +32,26 @@
     
     <section class="home" id="home">
         <div class="content">
-            <img class="en-proceso" src="/img/estacion.gif" alt="jugada" width="400px" height="500px" >
-            <h1>Lucas M. Ilustracion y Diseño</h1>
-            <h2>..............................</h2>
-            <h1>      En proceso . . . </h1>
+            <img class="en-proceso" src="img/estacion.gif" alt="jugada" width="300px" height="400px" >
+           
+            
+            
         </div>
-        
     </section>
 
+    <h2 id="txtForm">Agregar comentario</h2>
+    <form onsubmit="return validacion()" id="comentar">
+        
+        <label for="nombre">Nombre</label>
+        <input id="nombre" autofocus/>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" rows="5"></textarea>
+        <label for="email">Email</label>
+        <input type="email"/>
+        <button type="submit">Enviar</button>
+        <div id="error"></div>
+    </form>
+    <div id="msj"></div>
+    
 </body>
 </html>
