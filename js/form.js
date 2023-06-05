@@ -1,5 +1,5 @@
 let firstEntry = document.querySelector("form input");
-firstEntry.focus();
+
 
 let correo = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/;
 

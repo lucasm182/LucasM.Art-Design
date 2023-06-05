@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesB.css">
-    <script src="./js/form.js"></script>
+    <script src="./js/foroForm.js"></script>
     <title>Foro</title>
     
 
 </head>
-<body>
     <header>
         <h2>Lucas M</h2>
         <div class="logo">
@@ -32,15 +31,47 @@
     
     <section class="home" id="home">
         <div class="content">
-            <img class="en-proceso" src="./img/estacion.gif" alt="jugada" width="300px" height="400px" >
-           
-            
-            
+            <!-- <img class="en-proceso" src="./img/estacion.gif" alt="jugada" width="300px" height="400px" > -->
         </div>
     </section>
-
-    <h2 id="txtForm">Agregar comentario</h2>
-    <form onsubmit="return validacion()" id="comentar">
+    <form onsubmit="return verificarForm();" class="formulario" id="form">
+        <h1 class="formulario__titulo">Comentar</h1>
+        <label for="nombre" class="formulario__label">Nombre</label>
+        <input type="text" class="formulario__input" id="nombre" value="">
+        
+        <label for="correo" class="formulario__label">Correo</label>
+        <input type="txt" class="formulario__input" id="correo" value="">
+        
+        <label for="txtarea" class="formulario__label">Mensaje: maximo 200 caracteres</label>
+        <textarea id="txtarea" class="formulario__input" rows="5" vale=""></textarea>
+         
+        <input type="submit" class="formulario__submit">
+        <div class="warning" id="warning"></div>
+    </form>
+    <div id="dev"></div>
+    
+    <!--<h2 id="txtForm">Agregar comentario</h2>
+    <form action="#" method="post" class="form" id="form">
+        <div class="formulario">
+            <label for="nombre" class="formLabel">Nombre</label>
+            <input type="txtName" id="nombre" nombre="nombre">
+        </div>
+        <div class="formulario">
+            <label for="e-mail">E-mail</label>
+            <input type="txtEmail" id="email" name="email">
+        </div>
+        <div class="formulario">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="5"></textarea>
+        </div>
+        <button type="submit" id="submit">Enviar</button>
+    </form>-->
+    
+    
+    
+    
+    
+    <!--<form onsubmit="return validacion()" id="comentar">
         
         <label for="nombre">Nombre</label>
         <input id="nombre" autofocus/>
@@ -51,7 +82,7 @@
         <button type="submit">Enviar</button>
         <div id="error"></div>
     </form>
-    <div id="msj"></div>
+    <div id="msj"></div>-->
     
 </body>
 </html>
