@@ -308,8 +308,8 @@ audio {
   }
 
 /*formulario*/
-.formulario__titulo {
-    max-width: 100%;
+.formulario {
+    
     margin-top: 80px;
     padding-left: 93px;
     text-align: center;
@@ -318,8 +318,15 @@ audio {
     text-shadow: 2px 2px 4px rgba(0,0,0, .3);
    
 }
-.formulario{
-    max-width: 100%;
+
+.formulario__label{
+    flex-direction: column;
+}
+.formulario__input{
+    flex-direction: column;
+}
+.formulario__titulo{
+    
     display: flex;
     flex-direction:column;
     gap: 5px;
@@ -327,13 +334,13 @@ audio {
 }
 
 textarea {
-    max-width: 100%;
+    
     border: 1px solid rgb(187, 201, 157);
     border-radius: 0px 10px 10px 10px;
 }
 
 #warning {
-    max-width: 100%;
+    
     border: 1px solid rgb(215, 86, 138);
 
 }
@@ -345,37 +352,11 @@ textarea {
 }
 
 #dev {
-    max-width: 100%;
+    background-color: rgb(243, 244, 170);
     display: flex;
     flex-direction:column;
     gap: 5px;
     align-items: center; 
 }
 
-
-@media only screen and (max-width:789px){
-    h2, header{
-        min-width: 50%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 9999;
-    }
-    .logo{
-        display: none;
-    }
-    .tit-logo{
-        min-width: 50%;
-    }
-    nav ul, nav ul li, nav ul li a, nav ul li a:hover{
-        min-width: 50%;
-        align-items: center;
-    }
-    home{
-        min-width: 50%;
-    }
-    .home .content{min-width: 50%;}
-    .home .content h1{min-width: 50%;}
-}
 
