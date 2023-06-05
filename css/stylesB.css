@@ -8,11 +8,14 @@ body {
     background-color:rgb(183, 177, 177);
 }
 h2 {
+    max-width: 100%;
+    
     margin-left: 95px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(135, 111, 156);
 }
 header{
+    max-width: 100%;
     width: 100%;
     height: 40px;
     background-color: #333;
@@ -26,6 +29,7 @@ header{
 }
 
 .logo {
+    max-width: 100%;
     padding-left: 340px;
     height: 100px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -33,11 +37,11 @@ header{
 }
 
 .tit-logo {
-    
+    max-width: 100%;
     margin-left: 10px;
 }
 nav ul {
-    
+    max-width: 100%;
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -45,7 +49,7 @@ nav ul {
 }
 
 nav ul li {
-    
+    max-width: 100%;
     display: flex;
     margin-left: 20px;
     margin-right: 20px;
@@ -53,6 +57,7 @@ nav ul li {
 }
 
 nav ul li a {
+    max-width: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:#fff;
     text-decoration: none;
@@ -64,7 +69,7 @@ nav ul li a:hover {
 }
 
 home{
-    min-height: 50vh;
+    max-width: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -74,6 +79,7 @@ home{
 
 
 .home .content {
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,6 +88,7 @@ home{
 }
 
 .home .content h1 {
+    max-width: 100%;
     font-size: 35px;
     color: #fff;
     text-shadow: 0 .3rem .5rem rgba(0,0,0, .3);
@@ -89,6 +96,7 @@ home{
 }
 
 .video-container {
+    max-width: 100%;
     margin: 0 auto;
     padding-top: 5px;
     width: 350px;
@@ -96,13 +104,14 @@ home{
 }
 
 .video-container video {
+    max-width: 100%;
     width: 350px;
     height: 350px;
 }
 
 
 .conteiner {
-    
+    max-width: 100%;
     padding-top: 100px;
     display: flex;
     justify-content: center;
@@ -111,26 +120,29 @@ home{
 }
 
 .image-left, .image-right {
-          
+    max-width: 100%;          
     flex: 1;
     
     
 }
 .image-right {
+    
     padding-left: 100px;
 }
 
 .text-center {
-    
+    max-width: 100%;
     flex: 2;
     text-align: center;
 }
 .tit-retazo {
+    max-width: 100%;
     font-size: 30px;
     margin-top: -80px;
 }
 
 .parr-text {
+    max-width: 100%;
     margin-top: 90px;
     padding-left: 50px;
     text-align: center;
@@ -138,13 +150,14 @@ home{
 }
 
 .conteiner2 {
-    
+    max-width: 100%;
     display: flex;
     align-items: center;
     padding-bottom: 100px;
 }
 
 .title {
+    max-width: 100%;
     font-size: 25px;
     padding-left: 30%;
     
@@ -156,6 +169,7 @@ home{
 }
 
 .paragraph {
+    max-width: 100%;
     text-align: center;
     font-size: 25px;
 }
@@ -163,6 +177,7 @@ home{
 
 
 .conteiner-3 {
+    max-width: 100%;
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -173,6 +188,7 @@ home{
 }
 
 .text-t {
+    max-width: 100%;
     text-align: center;
     font-size: 25px;
     padding-right: 80px;
@@ -180,6 +196,7 @@ home{
 
 
 footer{
+    max-width: 100%;
     scroll-padding-top: 50px;
     padding: 30px;
     text-align: center;
@@ -190,7 +207,7 @@ footer{
 
 
 *.astro {
-    
+    max-width: 100%;
     position: fixed;
     top: 0;
     bottom:0;
@@ -207,6 +224,7 @@ footer{
 
 
 .animat-logo {
+    max-width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -243,7 +261,7 @@ audio {
 }
 
 .carrouselCont img {
-    
+    max-width: 100%;
     display: block;
     width: 100%;
     height: 100%;
@@ -251,6 +269,7 @@ audio {
 }
 
 .botones {
+    max-width: 100%;
     position: absolute;
     width: 40px;
     height: 40px;
@@ -270,14 +289,17 @@ audio {
 }
 
 .atras{
+    max-width: 100%;
     left: 10px;
 }
 
 .adelante {
+    max-width: 100%;
     right: 10px;
 }
 
 #footer-video {
+    max-width: 100%;
     position: fixed;
     bottom: 50px;
     left: 50%;
@@ -286,15 +308,18 @@ audio {
   }
 
 /*formulario*/
-#txtForm {
-    
+.formulario__titulo {
+    max-width: 100%;
+    margin-top: 80px;
+    padding-left: 93px;
     text-align: center;
     padding-right: 100px;
     color:rgb(67, 52, 83);
     text-shadow: 2px 2px 4px rgba(0,0,0, .3);
    
 }
-.form{
+.formulario{
+    max-width: 100%;
     display: flex;
     flex-direction:column;
     gap: 5px;
@@ -302,19 +327,55 @@ audio {
 }
 
 textarea {
+    max-width: 100%;
     border: 1px solid rgb(187, 201, 157);
     border-radius: 0px 10px 10px 10px;
 }
 
-/*#error {
+#warning {
+    max-width: 100%;
     border: 1px solid rgb(215, 86, 138);
 
 }
 
-.error p{
-    color: rgb(61, 5, 5);
+
+.error_msg {
+    max-width: 100%;
+    border: 1px solid black;
 }
 
-.error {
-    border: 1px solid black;
-}*/
+#dev {
+    max-width: 100%;
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+    align-items: center; 
+}
+
+
+@media only screen and (max-width:789px){
+    h2, header{
+        min-width: 50%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+    .logo{
+        display: none;
+    }
+    .tit-logo{
+        min-width: 50%;
+    }
+    nav ul, nav ul li, nav ul li a, nav ul li a:hover{
+        min-width: 50%;
+        align-items: center;
+    }
+    home{
+        min-width: 50%;
+    }
+    .home .content{min-width: 50%;}
+    .home .content h1{min-width: 50%;}
+}
+
